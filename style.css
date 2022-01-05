@@ -1,0 +1,341 @@
+<style>
+
+#wrap{
+	position:static;
+	margin-top:152px;
+}
+#wrap.on{
+	position:fixed;
+	top:152px;
+	left:0;
+	width:100%;
+	margin-top:0;
+}
+.header {
+	width:100%;
+	height:auto;
+	position:fixed;
+	top:0;
+	left:0;
+	background:#fff;
+	z-index:10000;
+
+}
+.head_top {
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	height:52px;
+	padding:0 10px;
+}
+.logo img {
+	height:23px;
+}
+.head_my span {
+	display:inline-block;
+	padding:0 5px;
+}
+.head_my span img {
+	height:23px;
+}
+.head_sub {
+	padding:10px 0;
+	border-top:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	text-align:center;
+}
+.head_sub em {
+	font-size:15px;
+	font-weight:bold;
+	color:#000;
+	font-style:normal;
+}
+.hamburger {
+	width:30px;
+	height:26px;
+	cursor:pointer;
+	position:relative;
+}
+.hamburger span {
+	display:block;
+	width:100%;
+	height:3px;
+	background:#000;
+	position:absolute;
+	top:50%;
+	left:0;
+	transform:translateY(-50%);
+}
+.hamburger span:before {
+	content:"";
+	position:absolute;
+	top:-10px;
+	left:0;
+	width:100%;
+	height:3px;
+	background:#000;
+}
+.hamburger span:after {
+	content:"";
+	position:absolute;
+	bottom:-10px;
+	left:0;
+	width:100%;
+	height:3px;
+	background:#000;
+}
+.head_gnb {
+	padding:20px 0;
+}
+.head_gnb ul {
+	text-align:center;
+}
+.head_gnb ul li {
+	display:inline-block;
+	padding:0 10px;
+}
+.head_gnb ul li a {
+	font-size:12px;
+	color:#000;
+}
+.content{
+	max-width:960px;
+	width:100%;
+	margin:0 auto;
+	height:auto;
+}
+.content01 {
+	background:url(https://m.thingoolmarket.com/data/event_2021/12/newyear_2022/mob/m_header_back.jpg)center center no-repeat;
+	background-size:cover;
+	height:1410px;
+	position:relative;
+}
+.content01 em {
+	position:absolute;
+	top:170px;
+	left:0;
+	right:0;
+	text-align:center;
+	font-size:25px;
+	color:#fff;
+	font-style:normal;
+}
+.con01_tit01 {
+	position:absolute;
+	top:280px;
+	left:0;
+	right:0;
+	text-align:center;
+}
+.con01_tit02 {
+	position:absolute;
+	top:400px;
+	left:0;
+	right:0;
+	text-align:center;
+}
+.con01_tit02 h1 {
+	font-size:80px;
+	font-weight:bold;
+	color:#fff;
+	line-height:1.2;
+}
+.con01_txt {
+	position:absolute;
+	bottom:250px;
+	left:0;
+	right:0;
+	text-align:center;
+}
+.con01_txt p {
+	font-size:30px;
+	font-weight:bold;
+	color:#fff;
+	line-height:1.5;
+}
+.content01 span {
+	position:absolute;
+	bottom:150px;
+	left:0;
+	right:0;
+	text-align:center;
+	font-size:25px;
+	color:#fff;
+	font-weight:bold;
+}
+.content02 {
+	padding:118px 10px 155px;
+	overflow:hidden;
+}
+.content02 ul {
+	margin-left:-5px;
+	margin-right:-5px;
+	margin-top:50px;
+}
+.content02 ul li {
+	float:left;
+	width:calc(100%/3);
+	padding:0 5px;
+}
+
+.con02_tit {
+	width:360px;
+	height:125px;
+	margin:0 auto;
+	background:url(https://m.thingoolmarket.com/data/event_2021/12/newyear_2022/section_0.png)center center no-repeat;
+}
+.content03 {
+	position:relative;
+	padding-top:130px;
+}
+#section01 {
+	position:relative;
+	background:url(https://m.thingoolmarket.com/data/event_2021/12/newyear_2022/mob/m_back_01.jpg)center center no-repeat;
+	background-size:100% 100%;
+}
+#section02 {
+	position:relative;
+	background:url(https://m.thingoolmarket.com/data/event_2021/12/newyear_2022/mob/m_back_02.jpg)center center no-repeat;
+	background-size:100% 100%;
+}
+section .inner {
+	padding:194px 30px;
+}
+.sec01_tit {
+	width:238px;
+	height:94px;
+	background:url(https://m.thingoolmarket.com/data/event_2021/12/newyear_2022/section_1.png)center center no-repeat;
+	margin:0 auto;
+}
+.sec02_tit {
+	width:238px;
+	height:94px;
+	background:url(https://m.thingoolmarket.com/data/event_2021/12/newyear_2022/section_2.png)center center no-repeat;
+	margin:0 auto;
+}
+.sec01_sub {
+	text-align:center;
+	font-size:36px;
+	color:#fff;
+	margin-top:50px;
+}
+.sec01_img {
+	margin-top:50px;
+	text-align:center;
+}
+.sec01_img img {
+	width:100%;
+}
+.sec01_slider {
+	position:relative;
+}
+.sec01_slider .slick-dots {
+	position:absolute;
+	bottom:30px;
+	left:0;
+	right:0;
+	text-align:center;
+}
+.sec01_slider .slick-dots li{
+	display:inline-block;
+	width:15px;
+	height:15px;
+	border-radius:50%;
+	background:#ddd;
+	margin:0 5px;
+	cursor:pointer;
+}
+.sec01_slider .slick-dots li.slick-active {
+	background:#000;
+}
+.sec01_slider .slick-dots li button {
+	font-size:0;
+}
+.sec01_slide {
+	background:#fff;
+	border-radius:25px;
+	padding:50px 40px 100px;
+	overflow:hidden;
+}
+.sec01_slide ul li {
+	float:left;
+	width:50%;
+}
+.sec01_slide ul li:nth-child(n+3){
+	margin-top:30px;
+}
+.sec01_slide ul li a > span{
+	display:block;
+	width:368px;
+	height:368px;
+}
+.sec01_slide ul li a dl{
+	margin-top:50xp;
+	text-align:center;
+}
+.sec01_slide ul li a dl dt span{
+	font-size:30px;
+	color:#ddd;
+}
+.sec01_slide ul li a dl dt h2 {
+	font-size:30px;
+	color:#000;
+}
+.sec01_slide ul li a dl dd em{
+	font-size:30px;
+	color:#ddd;
+}
+.sec01_slide ul li a dl dd strong{
+	font-size:40px;
+	color:#ca960d;
+}
+
+.gnb_menu{position:absolute; left:0; right:0; margin:0 auto; top:0; width:960px; height:130px; z-index:1; }
+.gnb_menu ul li {float:left; width:25%; height:130px; background:#000; text-align:center;}
+.gnb_menu ul li button{color:#fff; opacity:0.3; outline:none; border:none; background:unset; font-size:36px; font-weight:bold; line-height:130px;}
+.gnb_menu ul li button.active{opacity:1;}
+
+
+#section03:before{content:"공백"; position:absolute; left:0; bottom:0; width:100%; height:50px; background:purple;}
+#section04:before{content:"공백"; position:absolute; left:0; bottom:0; width:100%; height:50px; background:purple;}
+#section03{position:relative;height:100vh; background:orange; }
+#section04{position:relative;height:100vh; background:green; }
+.gnb{position:absolute; left:-300px; top:0; width:300px; background:#fff; padding:100px 30px; transition:0.3s all; z-index:20000;}
+.gnb.on {
+	left:0;
+}
+.gnb > ul > li{}
+.gnb > ul > li + li {
+	margin-top:50px;
+}
+.gnb > ul > li > a{display:block; height:30px; line-height:30px; font-size:30px;}
+
+.gnb_inner li a{
+	font-size:20px;
+}
+.close {
+	position:fixed;
+	top:100px;
+	left:400px;
+	cursor:pointer;
+	visibility:hidden;
+	opacity:0;
+	transition:0.3s all;
+}
+.close.on {
+	visibility:visible;
+	opacity:1;
+}
+.close span {
+	display:block;
+	width:30px;
+	height:2px;
+	background:#000;
+}
+.close span:nth-child(1) {
+	transform:rotate(45deg) translate(1px,1px);
+}
+.close span:nth-child(2) {
+	transform:rotate(-45deg);
+}
+</style>
